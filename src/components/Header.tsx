@@ -14,10 +14,10 @@ const Header: FC = () => {
                         <a href="#how-to-work">Как это работает</a>
                     </div>
                     <div className="header__block__selector">
-                        <a href="#">3-й блок</a>
+                        <a href="#third-block">3-й блок</a>
                     </div>
                     <div className="header__block__selector">
-                        <a href="#">Вопросы и ответы</a>
+                        <a href="#question-answer">Вопросы и ответы</a>
                     </div>
                     <div className="header__block__selector">
                         <a href="#">Форма</a>
