@@ -1,14 +1,24 @@
 import { Field, Form, Formik } from 'formik';
-import React, { FC } from 'react';
+import React, { FC, FocusEvent, useState } from 'react';
 
 import * as yup from 'yup';
 
 const validationSchema = yup.object().shape({
-    username: yup.string().required().min(2),
+    username: yup.string().required('fff').min(2),
     numberPhone: yup.number().required(),
 });
 
 const Footer: FC = () => {
+    const [focus, setFocus] = useState({ username: false, numberPhone: false });
+
+    const handleFocus = (e: FocusEvent<HTMLInputElement>) => {
+        setFocus({ ...focus, [e.target.name]: true });
+    };
+
+    const handleBlur = (e: FocusEvent<HTMLInputElement>) => {
+        setFocus({ ...focus, [e.target.name]: false });
+    };
+
     return (
         <div className="footer__form">
             <div className="footer__form-title">
@@ -17,33 +27,52 @@ const Footer: FC = () => {
             <Formik
                 className="footer__form"
                 initialValues={{ username: '', numberPhone: '' }}
+                validationSchema={validationSchema}
                 onSubmit={() => alert('Hi!')}
             >
                 <Form>
                     <div className="footer__form-initials">
-                        <label htmlFor="username"></label>
+                        <label
+                            className={`footer__form-initials-label-name ${
+                                focus.username ? 'focus' : ''
+                            }`}
+                            htmlFor="username"
+                        >
+                            Имя
+                        </label>
                         <Field
                             className="footer__form-initials-name"
                             id="username"
                             type="text"
                             name="username"
                             placeholder="Имя"
+                            onFocus={handleFocus}
+                            onBlur={handleBlur}
                             required
                         />
-                        <label htmlFor="numberPhone"></label>
+                        <label
+                            className={`footer__form-initials-label-number ${
+                                focus.numberPhone ? 'focus' : ''
+                            }`}
+                            htmlFor="numberPhone"
+                        >
+                            Телефон
+                        </label>
                         <Field
                             className="footer__form-initials-number"
                             id="numberPhone"
                             type="email"
                             name="numberPhone"
                             placeholder="Телефон"
+                            onFocus={handleFocus}
+                            onBlur={handleBlur}
                             required
                         />
                     </div>
                     <div className="footer__form-send">
                         <div className="footer__form-send-checkbox">
                             <Field type="checkbox" name="agree" required />
-                            Согласен, отказываюсь
+                            <span>Согласен, отказываюсь</span>
                         </div>
 
                         <button type="submit" className="footer__form-send-btn">
@@ -52,9 +81,12 @@ const Footer: FC = () => {
                     </div>
                 </Form>
             </Formik>
-            <hr />
+
             <div className="footer__initials">
-                <span>©</span> 2021 Лаборатория интернет
+                <div className="footer__line"></div>
+                <span>
+                    <span>©</span> 2021 Лаборатория интернет
+                </span>
             </div>
         </div>
     );
