@@ -1,4 +1,4 @@
-import './assets/style.scss';
+import './assets/css/style.scss';
 import React, { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
