@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import user from '../assets/img/user.svg';
 import leftArrow from '../assets/img/left-arrow.svg';
@@ -7,7 +7,8 @@ import reviews from '../assets/reviews';
 
 const Reviews: FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const reviewsPerPage = 3;
+    const [reviewsPerPage, setReviewsPerPage] = useState(3);
+    const [activeDots, setActiveDots] = useState(true);
     const indexOfLastReview = currentPage * reviewsPerPage;
     const indexOfFirstReview = indexOfLastReview - reviewsPerPage;
 
@@ -26,6 +27,23 @@ const Reviews: FC = () => {
     };
 
     const totalPages = Math.ceil(reviews.length / reviewsPerPage);
+
+    const handleResize = () => {
+        if (window.innerWidth > 768) setReviewsPerPage(3);
+        if (window.innerWidth <= 768) setReviewsPerPage(2);
+        if (window.innerWidth <= 375) {
+            setReviewsPerPage(1);
+            setActiveDots(false);
+        }
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <div id="reviews" className="main__reviews">
@@ -65,16 +83,19 @@ const Reviews: FC = () => {
                 </button>
             </ul>
             <div className="main__reviews__dots">
-                <div className="main__reviews__dot">
-                    {Array.from({ length: totalPages }, (_, index) => (
-                        <span
-                            key={index}
-                            style={{
-                                backgroundColor: currentPage === index + 1 ? '#2A6CEA' : '#C2C8CD',
-                            }}
-                        />
-                    ))}
-                </div>
+                {activeDots && (
+                    <div className="main__reviews__dot">
+                        {Array.from({ length: totalPages }, (_, index) => (
+                            <span
+                                key={index}
+                                style={{
+                                    backgroundColor:
+                                        currentPage === index + 1 ? '#2A6CEA' : '#C2C8CD',
+                                }}
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );

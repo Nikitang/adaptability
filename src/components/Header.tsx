@@ -1,6 +1,22 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
+
+import SelectorsMenu from './SelectorsMenu';
 
 const Header: FC = () => {
+    const [mobile, setMobile] = useState(false);
+
+    const handleResize = () => {
+        setMobile(window.innerWidth <= 768);
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <>
             <div className="header__block">
@@ -10,18 +26,24 @@ const Header: FC = () => {
                     <span className="header__block__logo-txt">testLab</span>
                 </div>
                 <div className="header__block__selectors">
-                    <div className="header__block__selector">
-                        <a href="#how-to-work">Как это работает</a>
-                    </div>
-                    <div className="header__block__selector">
-                        <a href="#third-block">3-й блок</a>
-                    </div>
-                    <div className="header__block__selector">
-                        <a href="#question-answer">Вопросы и ответы</a>
-                    </div>
-                    <div className="header__block__selector">
-                        <a href="#">Форма</a>
-                    </div>
+                    {mobile ? (
+                        <SelectorsMenu />
+                    ) : (
+                        <nav className="header__block__selectors-nav">
+                            <div className="header__block__selector">
+                                <a href="#how-to-work">Как это работает</a>
+                            </div>
+                            <div className="header__block__selector">
+                                <a href="#third-block">3-й блок</a>
+                            </div>
+                            <div className="header__block__selector">
+                                <a href="#question-answer">Вопросы и ответы</a>
+                            </div>
+                            <div className="header__block__selector">
+                                <a href="#form">Форма</a>
+                            </div>
+                        </nav>
+                    )}
                 </div>
             </div>
             <div className="header__cart">

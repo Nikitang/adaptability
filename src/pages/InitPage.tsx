@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 const InitPage: FC = () => {
     return (
-        <div>
-            <div>Hello</div>
-            <img src="" alt="people" />
+        <div className="init-page">
+            <Link to="main">Internetlab</Link>
         </div>
     );
 };
