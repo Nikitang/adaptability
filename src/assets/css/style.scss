@@ -784,7 +784,11 @@ html {
             }
             @media (max-width: 375px) {
                 flex-direction: column;
-                margin-left: 100px;
+                margin-left: 65px;
+            }
+            @media (max-width: 320px) {
+                flex-direction: column;
+                margin-left: 65px;
             }
             &-name {
                 box-sizing: border-box;
@@ -1018,10 +1022,11 @@ html {
                 }
                 @media (max-width: 375px) {
                     width: 300px;
-                    margin-left: 90px;
+                    margin-left: 50px;
                 }
                 @media (max-width: 320px) {
                     width: 295px;
+                    margin-left: 55px;
                 }
 
                 &:hover {
