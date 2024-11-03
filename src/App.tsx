@@ -6,7 +6,12 @@ import MainPage from './pages/MainPage';
 import InitPage from './pages/InitPage';
 
 const App: FC = () => {
-    return <MainPage />;
+    return (
+        <Routes>
+            <Route path="/" element={<InitPage />} />
+            <Route path="main" element={<MainPage />} />
+        </Routes>
+    );
 };
 
 export default App;
