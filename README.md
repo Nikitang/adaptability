@@ -1,5 +1,7 @@
 # Test - adaptability
 
+#
+
 # Уставновка зависимостей
 
 ```bash
