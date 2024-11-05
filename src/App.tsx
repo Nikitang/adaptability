@@ -1,6 +1,6 @@
 import './assets/css/style.scss';
 import React, { FC } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Routes, Route } from 'react-router-dom';
 
 import MainPage from './pages/MainPage';
 import InitPage from './pages/InitPage';
