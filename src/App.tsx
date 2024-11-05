@@ -8,14 +8,8 @@ import InitPage from './pages/InitPage';
 const App: FC = () => {
     return (
         <Routes>
-            <Route
-                path="https://nikitang.github.io/adaptability.github.io"
-                element={<InitPage />}
-            />
-            <Route
-                path="https://nikitang.github.io/adaptability.github.io/main"
-                element={<MainPage />}
-            />
+            <Route path="/" element={<InitPage />} />
+            <Route path="/main" element={<MainPage />} />
         </Routes>
     );
 };
