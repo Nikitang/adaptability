@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f054184.css",
-    "main.js": "/static/js/main.984c58e2.js",
-    "static/media/people.png": "/static/media/people.8919769b2e8b61c44515.png",
-    "static/media/phone.png": "/static/media/phone.8c06c65c92ff957a0d64.png",
-    "static/media/phone-background.png": "/static/media/phone-background.bcf693ab10549efef61a.png",
-    "static/media/plus.svg": "/static/media/plus.167fb3811fed756a275c35674c56b087.svg",
-    "static/media/left-arrow.svg": "/static/media/left-arrow.6a188683c72162153a13b45805bbe0de.svg",
-    "static/media/user.svg": "/static/media/user.4a42ac28cafc3b1f90fdd5c25d84233f.svg",
-    "static/media/right-arrow.svg": "/static/media/right-arrow.0d939e791bf467a12359014f5cbdc677.svg",
-    "index.html": "/index.html",
-    "main.9f054184.css.map": "/static/css/main.9f054184.css.map",
-    "main.984c58e2.js.map": "/static/js/main.984c58e2.js.map"
+    "main.css": "/adaptability.github.io/static/css/main.859f1640.css",
+    "main.js": "/adaptability.github.io/static/js/main.c45ccc52.js",
+    "static/media/people.png": "/adaptability.github.io/static/media/people.8919769b2e8b61c44515.png",
+    "static/media/phone.png": "/adaptability.github.io/static/media/phone.8c06c65c92ff957a0d64.png",
+    "static/media/phone-background.png": "/adaptability.github.io/static/media/phone-background.bcf693ab10549efef61a.png",
+    "static/media/plus.svg": "/adaptability.github.io/static/media/plus.167fb3811fed756a275c35674c56b087.svg",
+    "static/media/left-arrow.svg": "/adaptability.github.io/static/media/left-arrow.6a188683c72162153a13b45805bbe0de.svg",
+    "static/media/user.svg": "/adaptability.github.io/static/media/user.4a42ac28cafc3b1f90fdd5c25d84233f.svg",
+    "static/media/right-arrow.svg": "/adaptability.github.io/static/media/right-arrow.0d939e791bf467a12359014f5cbdc677.svg",
+    "index.html": "/adaptability.github.io/index.html",
+    "main.859f1640.css.map": "/adaptability.github.io/static/css/main.859f1640.css.map",
+    "main.c45ccc52.js.map": "/adaptability.github.io/static/js/main.c45ccc52.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f054184.css",
-    "static/js/main.984c58e2.js"
+    "static/css/main.859f1640.css",
+    "static/js/main.c45ccc52.js"
   ]
 }
