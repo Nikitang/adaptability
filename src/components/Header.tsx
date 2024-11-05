@@ -31,16 +31,16 @@ const Header: FC = () => {
                     ) : (
                         <nav className="header__block__selectors-nav">
                             <div className="header__block__selector">
-                                <a href="#how-to-work">Как это работает</a>
+                                <a href="/#how-to-work">Как это работает</a>
                             </div>
                             <div className="header__block__selector">
-                                <a href="#third-block">3-й блок</a>
+                                <a href="/#third-block">3-й блок</a>
                             </div>
                             <div className="header__block__selector">
-                                <a href="#question-answer">Вопросы и ответы</a>
+                                <a href="/#question-answer">Вопросы и ответы</a>
                             </div>
                             <div className="header__block__selector">
-                                <a href="#form">Форма</a>
+                                <a href="/#form">Форма</a>
                             </div>
                         </nav>
                     )}

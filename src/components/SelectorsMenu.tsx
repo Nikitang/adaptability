@@ -26,25 +26,25 @@ const SelectorsMenu: FC = () => {
             <nav className={`header__block__selectors-nav ${open ? 'opened' : ''}`}>
                 <div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#how-to-work">
+                        <a onClick={setMenu} href="/#how-to-work">
                             Как это работает
                         </a>
                         <img src={rightArrow} alt="" />
                     </div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#third-block">
+                        <a onClick={setMenu} href="/#third-block">
                             3-й блок
                         </a>
                         <img src={rightArrow} alt="" />
                     </div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#question-answer">
+                        <a onClick={setMenu} href="/#question-answer">
                             Вопросы и ответы
                         </a>
                         <img src={rightArrow} alt="" />
                     </div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#form">
+                        <a onClick={setMenu} href="/#form">
                             Форма
                         </a>
                         <img src={rightArrow} alt="" />
