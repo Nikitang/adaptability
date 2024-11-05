@@ -9,7 +9,7 @@ const App: FC = () => {
     return (
         <Routes>
             <Route
-                path="https://nikitang.github.io/adaptability.github.io/"
+                path="https://nikitang.github.io/adaptability.github.io"
                 element={<InitPage />}
             />
             <Route
