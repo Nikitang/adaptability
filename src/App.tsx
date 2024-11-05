@@ -6,13 +6,18 @@ import MainPage from './pages/MainPage';
 import InitPage from './pages/InitPage';
 
 const App: FC = () => {
-    return <MainPage />;
+    return (
+        <Routes>
+            <Route
+                path="https://nikitang.github.io/adaptability.github.io/"
+                element={<InitPage />}
+            />
+            <Route
+                path="https://nikitang.github.io/adaptability.github.io/main"
+                element={<MainPage />}
+            />
+        </Routes>
+    );
 };
 
 export default App;
-{
-    /* <Routes>
-<Route path="/" element={<InitPage />} />
-<Route path="main" element={<MainPage />} />
-</Routes> */
-}
