@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/adaptability.github.io/static/css/main.859f1640.css",
-    "main.js": "/adaptability.github.io/static/js/main.fdfbebbd.js",
+    "main.js": "/adaptability.github.io/static/js/main.b12fea4d.js",
     "static/media/people.png": "/adaptability.github.io/static/media/people.8919769b2e8b61c44515.png",
     "static/media/phone.png": "/adaptability.github.io/static/media/phone.8c06c65c92ff957a0d64.png",
     "static/media/phone-background.png": "/adaptability.github.io/static/media/phone-background.bcf693ab10549efef61a.png",
@@ -11,10 +11,10 @@
     "static/media/right-arrow.svg": "/adaptability.github.io/static/media/right-arrow.0d939e791bf467a12359014f5cbdc677.svg",
     "index.html": "/adaptability.github.io/index.html",
     "main.859f1640.css.map": "/adaptability.github.io/static/css/main.859f1640.css.map",
-    "main.fdfbebbd.js.map": "/adaptability.github.io/static/js/main.fdfbebbd.js.map"
+    "main.b12fea4d.js.map": "/adaptability.github.io/static/js/main.b12fea4d.js.map"
   },
   "entrypoints": [
     "static/css/main.859f1640.css",
-    "static/js/main.fdfbebbd.js"
+    "static/js/main.b12fea4d.js"
   ]
 }
