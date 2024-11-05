@@ -2,6 +2,7 @@ import React, { FC, MouseEvent, useState } from 'react';
 import close from '../assets/img/close.png';
 import menu from '../assets/img/menu.png';
 import rightArrow from '../assets/img/right-arrow.svg';
+import { Link } from 'react-router-dom';
 
 const SelectorsMenu: FC = () => {
     const [open, setOpen] = useState(false);
@@ -26,27 +27,27 @@ const SelectorsMenu: FC = () => {
             <nav className={`header__block__selectors-nav ${open ? 'opened' : ''}`}>
                 <div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#how-to-work">
+                        <Link onClick={setMenu} to="#how-to-work">
                             Как это работает
-                        </a>
+                        </Link>
                         <img src={rightArrow} alt="" />
                     </div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#third-block">
+                        <Link onClick={setMenu} to="#third-block">
                             3-й блок
-                        </a>
+                        </Link>
                         <img src={rightArrow} alt="" />
                     </div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#question-answer">
+                        <Link onClick={setMenu} to="#question-answer">
                             Вопросы и ответы
-                        </a>
+                        </Link>
                         <img src={rightArrow} alt="" />
                     </div>
                     <div className="header__block__selector">
-                        <a onClick={setMenu} href="#form">
+                        <Link onClick={setMenu} to="#form">
                             Форма
-                        </a>
+                        </Link>
                         <img src={rightArrow} alt="" />
                     </div>
                 </div>
