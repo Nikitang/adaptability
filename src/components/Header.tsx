@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 
 import SelectorsMenu from './SelectorsMenu';
+import { Link } from 'react-router-dom';
 
 const Header: FC = () => {
     const [mobile, setMobile] = useState(false);
@@ -31,16 +32,16 @@ const Header: FC = () => {
                     ) : (
                         <nav className="header__block__selectors-nav">
                             <div className="header__block__selector">
-                                <a href="/#how-to-work">Как это работает</a>
+                                <Link to="#how-to-work">Как это работает</Link>
                             </div>
                             <div className="header__block__selector">
-                                <a href="/#third-block">3-й блок</a>
+                                <Link to="#third-block">3-й блок</Link>
                             </div>
                             <div className="header__block__selector">
-                                <a href="/#question-answer">Вопросы и ответы</a>
+                                <Link to="#question-answer">Вопросы и ответы</Link>
                             </div>
                             <div className="header__block__selector">
-                                <a href="/#form">Форма</a>
+                                <Link to="#form">Форма</Link>
                             </div>
                         </nav>
                     )}
