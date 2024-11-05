@@ -9,7 +9,7 @@ const App: FC = () => {
     return (
         <Routes>
             <Route path="/" element={<InitPage />} />
-            <Route path="/main" element={<MainPage />} />
+            <Route path="/main/" element={<MainPage />} />
         </Routes>
     );
 };
