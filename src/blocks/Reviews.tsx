@@ -31,7 +31,7 @@ const Reviews: FC = () => {
     const handleResize = () => {
         if (window.innerWidth > 768) setReviewsPerPage(3);
         if (window.innerWidth <= 768) setReviewsPerPage(2);
-        if (window.innerWidth <= 375) {
+        if (window.innerWidth <= 767) {
             setReviewsPerPage(1);
             setActiveDots(false);
         }
