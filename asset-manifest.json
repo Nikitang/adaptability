@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/adaptability.github.io/static/css/main.1d35b2ad.css",
-    "main.js": "/adaptability.github.io/static/js/main.89e69367.js",
+    "main.css": "/adaptability.github.io/static/css/main.4d0a605f.css",
+    "main.js": "/adaptability.github.io/static/js/main.0ee20db0.js",
     "static/media/people.png": "/adaptability.github.io/static/media/people.8919769b2e8b61c44515.png",
     "static/media/phone.png": "/adaptability.github.io/static/media/phone.8c06c65c92ff957a0d64.png",
     "static/media/phone-background.png": "/adaptability.github.io/static/media/phone-background.bcf693ab10549efef61a.png",
@@ -10,11 +10,11 @@
     "static/media/user.svg": "/adaptability.github.io/static/media/user.4a42ac28cafc3b1f90fdd5c25d84233f.svg",
     "static/media/right-arrow.svg": "/adaptability.github.io/static/media/right-arrow.0d939e791bf467a12359014f5cbdc677.svg",
     "index.html": "/adaptability.github.io/index.html",
-    "main.1d35b2ad.css.map": "/adaptability.github.io/static/css/main.1d35b2ad.css.map",
-    "main.89e69367.js.map": "/adaptability.github.io/static/js/main.89e69367.js.map"
+    "main.4d0a605f.css.map": "/adaptability.github.io/static/css/main.4d0a605f.css.map",
+    "main.0ee20db0.js.map": "/adaptability.github.io/static/js/main.0ee20db0.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d35b2ad.css",
-    "static/js/main.89e69367.js"
+    "static/css/main.4d0a605f.css",
+    "static/js/main.0ee20db0.js"
   ]
 }
